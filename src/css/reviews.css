@@ -1,37 +1,61 @@
 .reviews {
    max-width: 1216px;
-   margin: 80px auto;
+   margin: 40px auto;
 }
 
 .reviews-slider {
-   margin: 0 auto;
+   /* margin: 0 auto; */
 }
 
 .reviews-slider__item {
-   max-width: 700px;
-   text-align: center;
-   color: #6B6B6B;
-}
+   width: 31.604938%; /* 384px/1215 */
+   padding: 2.5em;
 
-.reviews-slider__logo {
-   margin: 0 auto;
-   width: 58px;
-   margin-bottom: 58px;
+   display: flex;
+   gap: 32px;
+   
+   background: #FFFFFF;
+   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+   border-image: linear-gradient(90deg, #FF6800 0%, #FF1F00 100%) 1;
+   border-radius: 15px;
+   border-style: solid;
+   border-width: 2px;
 }
 
 .reviews-slider__text {
-   font-size: 24px;
-   line-height: 40px;
+   max-width: 78.125%; /* 300px/384 */
+   margin: 0 auto;
+   padding-bottom: 24px;
+   text-align: center;
 
-   margin-bottom: 17px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.5rem;
+   
+   color: #808080;
 }
 
-.reviews-slider__autor {
-   margin-bottom: 75px;
+.reviews-slider__person {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 12px;
 }
 
-.slick-list {
-   overflow: hidden;
+.reviews-slider__img {
+   width: 55px;
+}
+
+.name {
+   font-weight: 600;
+   font-size: 14px;
+   color: #333333;
+}
+
+.specialty {
+   font-weight: 300;
+   font-size: 10px;
+   color: #666666;
 }
 
 
@@ -55,16 +79,6 @@
    }
 }
 
-/* ---------------------brands--------------------------- */
-.brands {
-   margin: 100px auto;
-   overflow: hidden;
-}
-
-.brands__item img{
-   margin: 0 auto;
-}
-
 /* ---------------------download----------------------------------- */
 .download-bg {
    overflow: hidden;
@@ -82,7 +96,7 @@
 }
 
 .download {
-   background: linear-gradient(276.18deg, #6E28B1 0%, rgba(0, 0, 0, 0) 100%), #FC0A7E;
+   background: linear-gradient(90.87deg, rgba(255, 104, 1, 0.8) 0.72%, rgba(255, 32, 1, 0.8) 99.25%), url(../img/Call-to-Action.png) no-repeat center;
    padding: 115px 0;
    color: #fff;
    text-align: center;

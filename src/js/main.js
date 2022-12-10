@@ -33,5 +33,5 @@ $('.reviews-slider').slick({
   autoplay: true,
   speed: 300,
   slidesToShow: 3,
-  adaptiveHeight: true
+  slidesToScroll: 1,
 });
