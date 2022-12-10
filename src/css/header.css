@@ -1,0 +1,162 @@
+@keyframes go-top-bottom {
+   from { bottom: 40px; }
+   to { bottom: 20px; }
+}
+
+@keyframes go-right-center {
+   from { right: -100%; }
+   to { right: -12%; }
+}
+
+@keyframes go-right-left {
+   from { left: -100%; }
+   to { left: 0%; }
+}
+
+.head {
+   overflow: hidden;
+   position: relative;
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 6.25rem;
+}
+
+.header__logo {
+   width: 120px;
+}
+
+.menu {
+   line-height: 1.25rem;
+   display: flex;
+   font-size: 1rem;
+}
+
+.menu__item {
+   margin-left: 2.5rem;
+}
+
+.menu__link {
+   color: #E75624;
+   transition: all .3s;
+}
+
+.menu__link:hover {
+   color: #913617;
+}
+
+/* HERO */
+
+.hero {
+   display: flex;
+   align-items: center;
+   position: relative;
+   color: #FFFFFF;
+}
+
+.hero__title {
+   font-size: 80px;
+   line-height: 80px;
+
+   margin-bottom: 10px;
+}
+
+.hero__subtitle {
+   font-size: 30px;
+   line-height: 44px;
+
+   margin-bottom: 25px;
+}
+
+.hero__button {
+   background: #FC0A7E;
+   border-radius: 3px;
+   padding: 20px 40px;
+      
+   font-size: 16px;
+   line-height: 26px;
+   transition: all .3s;
+}
+
+.hero__button:hover {
+   background: #d10a6a;
+}
+
+.hero__left {
+   position: relative;
+   margin: 177px 0 277px 0;
+   padding: 20px 0 40px 0;
+   z-index: 1;
+
+   animation: go-right-left 2.5s;
+}
+
+.hero__right {
+   position: absolute;
+   top: 20px;
+   right: -12%;
+
+   animation: go-right-center 2.5s;
+}
+
+.arrow-down {
+   position: absolute;
+   bottom: 30px;
+   left: 50%;
+
+   animation: go-top-bottom 1s infinite alternate-reverse;
+}
+
+.hero__img {
+   width: 652px;
+}
+
+@media screen and (max-width: 780px){   
+   .hero__title {
+      font-size: 50px;
+      line-height: 60px;
+
+      margin-bottom: 10px;
+   }
+
+   .hero__left {
+      width: 90%;
+      margin: 137px 0 277px 0;
+      padding: 20px 0 40px 0;
+   }
+
+   .hero__img {
+      width: 400px;
+   }
+   
+   .hero__right {
+      top: 25%;
+      right: -12%;
+   }
+}
+
+@media screen and (max-width: 390px){   
+   .hero__title {
+      font-size: 50px;
+      line-height: 60px;
+
+      margin-bottom: 10px;
+   }
+
+   .hero__left {
+      margin: 80px 0 227px 0;
+      padding: 20px 0 40px 0;
+   }
+
+   .hero__img {
+      width: 300px;
+   }
+   
+   .hero__right {
+      top: 50%;
+      right: -12%;
+   }
+}

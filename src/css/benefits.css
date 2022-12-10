@@ -1,0 +1,164 @@
+.mb-70 {
+   margin-bottom: 70px;
+}
+
+.benefits__item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 80px 0;
+   text-align: left;
+}
+
+.benefits__text {
+   max-width: 450px;
+   padding: 0 58px;
+}
+
+.benefits__img {
+   max-width: 341px;
+   margin: 0 110px;
+}
+
+@media screen and (max-width: 780px){   
+   .benefits__item {
+      flex-wrap: wrap;
+      padding: 50px 0;
+   }
+   
+   .benefits__text {
+      padding: 40px 0;
+   }
+   
+   .benefits__img {
+      width: 341px;
+      margin: 0 50px;
+   }
+   
+   .blog__img {
+      margin: 0 auto;
+   }
+}
+
+@media screen and (max-width: 390px){   
+   .benefits__item {
+      flex-wrap: wrap;
+      padding: 30px 0;
+   }
+   
+   .benefits__img {
+      width: 341px;
+      margin: 0 30px;
+   }
+
+   .blog__img {
+      width: 341px;
+      margin: 0 auto;
+   }
+   
+}
+
+/* -----------------------------advantages----------------------------- */
+.statistic,
+.advantages {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   max-width: 1296px;
+   margin: 80px auto;
+}
+
+.advantages__item {
+   max-width: 33.3%;
+   padding: 0 30px;
+   text-align: center;
+}
+
+.advantages__logo {
+   margin: 0 auto;
+   margin-bottom: 40px;
+}
+
+.advantages__title {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 24px;
+   color: #000;
+
+   margin-bottom: 17px;
+}
+
+.advantages__text {
+   font-size: 16px;
+   line-height: 30px;
+   color: #6B6B6B;
+}
+
+@media screen and (max-width: 780px){
+   .statistic,
+   .advantages {
+      margin: 60px auto;
+   }
+
+   .advantages {
+      flex-direction: column;
+      gap: 50px;
+      margin: 60px auto;
+   }
+   
+   .advantages__item {
+      max-width: 100%;
+      padding: 0 30px;
+   }
+}
+
+/* --------------------------statistic------------------------------- */
+.statistic {
+   text-align: center;
+}
+
+.statistic__item{
+   width: 25%;
+   padding: 0 30px;
+   text-align: center;
+}
+
+.statistic__number {
+   font-size: 59px;
+   line-height: 90px;
+   color: #333333;
+
+   margin-bottom: 10px;
+}
+
+.statistic__text {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 24px;
+   color: #000000;
+}
+
+@media screen and (max-width: 780px){   
+   .statistic {
+      flex-wrap: wrap;
+   }
+   
+   .statistic__item{
+      width: 50%;
+   }
+}
+
+@media screen and (max-width: 390px){  
+   .statistic,
+   .advantages {
+      margin: 40px auto;
+   }
+
+   .statistic__item{
+      width: 100%;
+      padding: 20px 0;
+   }
+}
+
+/* -----------blog__img------------------------- */
