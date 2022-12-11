@@ -49,3 +49,10 @@ body {
 
    color: #999;
 }
+
+@media screen and (max-width: 1024px){   
+   .title,
+   .subtitle {
+      text-align: center;
+   }
+}
