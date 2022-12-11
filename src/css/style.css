@@ -7,7 +7,7 @@
 /* Block */
 @import "header.css";
 @import "second.css";
-@import "benefits.css";
+@import "accord.css";
 @import "reviews.css";
 @import "humb-menu.css";
 
@@ -24,43 +24,28 @@ body {
    font-family: 'Poppins', sans-serif;
 }
 
+._text-center {
+   text-align: center;
+}
+
 /* Title */
+.title-block {
+   margin: 58px 0 32px 0;
+}
+
 .title {
-   margin-bottom: 55px;
-}
-.title__sub {   
-   letter-spacing: 2px;
-   text-transform: uppercase;
-   color: #A8A8A8;
+   font-weight: 600;
+   font-size: 2rem;
+   line-height: 2.625rem;
+   
+   color: #000;
 
-   margin-bottom: 30px;
+   margin-bottom: 6px;
 }
-.title__main {
-   font-size: 38px;
-   line-height: 48px;
-}
-.title__sup {
-   font-size: 16px;
-   line-height: 30px;
-   color: #6B6B6B;
-}
+.subtitle {   
+   font-weight: 400;
+   font-size: .875rem;
+   line-height: 1.5rem;
 
-
-@media screen and (max-width: 390px){   
-   .title__main {
-      font-size: 28px;
-      line-height: 38px;
-   }
-}
-
-/* Animation text */
-.element-animation {
-   opacity: 0;
-   transform: translateY(20%);
- }
- 
- .element-animation.element-show {
-   opacity: 1;
-   transition: all 1s;
-   transform: translateY(0%);
+   color: #999;
 }

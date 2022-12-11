@@ -1,30 +1,36 @@
-.reviews {
-   max-width: 1216px;
-   margin: 40px auto;
-}
 
-.reviews-slider {
-   /* margin: 0 auto; */
+/* SLICK Custom Setting */
+.slick-initialized .slick-slide {
+   margin: 0 15px;
+}
+.slick-track {
+   padding-bottom: 32px;
+   display: flex;
+   flex: 0 0 auto;
+}
+.slick-dots li button:before {
+   content: ' ' !important;
+   width: 16px !important;
+   height: 16px !important;
+   border-radius: 100%;
+   background: linear-gradient(90deg, #FF6800 0%, #FF1F00 100%);
+}
+/* --------------------------- */
+
+.reviews {
+   margin-bottom: 106px;
 }
 
 .reviews-slider__item {
-   width: 31.604938%; /* 384px/1215 */
    padding: 2.5em;
-
-   display: flex;
-   gap: 32px;
    
    background: #FFFFFF;
-   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
-   border-image: linear-gradient(90deg, #FF6800 0%, #FF1F00 100%) 1;
+   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
    border-radius: 15px;
-   border-style: solid;
-   border-width: 2px;
+   border: 2px solid #FF6800;
 }
 
 .reviews-slider__text {
-   max-width: 78.125%; /* 300px/384 */
-   margin: 0 auto;
    padding-bottom: 24px;
    text-align: center;
 

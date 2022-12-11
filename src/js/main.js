@@ -1,22 +1,3 @@
-function onEntry(entry) {
-   entry.forEach(change => {
-     if (change.isIntersecting) {
-      change.target.classList.add('element-show');
-     }
-   });
- }
- 
- let options = {
-   threshold: [0.5] };
- let observer = new IntersectionObserver(onEntry, options);
- let elements = document.querySelectorAll('.element-animation');
- 
- for (let elm of elements) {
-   observer.observe(elm);
- }
-
-
-
 $('.mobile div').on('click', () => {
   $('.mobile div').toggleClass('active');
   $('.mobile nav').toggleClass('open');
@@ -31,7 +12,37 @@ $('.reviews-slider').slick({
   dots: true,
   infinite: true,
   autoplay: true,
-  speed: 300,
+  speed: 500,
+  pauseOnHover: true,
   slidesToShow: 3,
   slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
+
+// Accordion
+$(document).ready(function () {
+  $('.accordion__title').click(function(event) {
+    if($('.accordion').hasClass('one')){
+      $('.accordion__title').not($(this)).removeClass('active');
+      $('.accordion__text').not($(this).next()).slideUp(300);
+    }
+    $(this).toggleClass('active').next().slideToggle(300)
+  });
+})
