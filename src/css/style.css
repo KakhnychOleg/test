@@ -1,17 +1,13 @@
 /* Default */
 @import "reset.css";
 
-/* Fonts */
-@import "fonts.css";
-
 /* Block */
 @import "header.css";
-@import "second.css";
-@import "accord.css";
 @import "reviews.css";
+@import "accord.css";
+@import "contact.css";
 @import "humb-menu.css";
 
-@import "footer.css";
 
 /* Global */
 .container {
@@ -24,15 +20,7 @@ body {
    font-family: 'Poppins', sans-serif;
 }
 
-._text-center {
-   text-align: center;
-}
-
 /* Title */
-.title-block {
-   margin: 58px 0 32px 0;
-}
-
 .title {
    font-weight: 600;
    font-size: 2rem;
@@ -48,6 +36,21 @@ body {
    line-height: 1.5rem;
 
    color: #999;
+}
+
+._text-center {
+   text-align: center;
+}
+
+._mb-30 {
+   margin-bottom: 30px;
+}
+._mb-20 {
+   margin-bottom: 20px;
+}
+
+._mt-60 {
+   margin-top: 60px;
 }
 
 @media screen and (max-width: 1024px){   

@@ -1,0 +1,54 @@
+.contact-bg {
+   overflow: hidden;
+   max-width: 100%;
+}
+
+.contact {
+   background: linear-gradient(90.87deg, rgba(255, 104, 1, 0.8) 0.72%, rgba(255, 32, 1, 0.8) 99.25%), url(../img/Call-to-Action.png);
+   background-position: center;
+   background-size: contain;
+   padding: 96px 0;
+   text-align: center;
+}
+
+.contact__text {
+   font-size: 38px;
+   line-height: 48px;
+   margin-bottom: 40px;
+   font-weight: 600;
+   color: #FFFFFF;
+
+   margin-bottom: 26px;
+}
+
+.contact__link-btn {
+   padding: 20px 40px;
+   margin: 0 auto;
+   width: 182px;
+   height: 56px;
+   transition: all .3s;
+
+   background: #fff;
+   border: 2px solid #fff;
+   border-radius: 15px;
+
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 47px;
+   
+   color: #FF1F00;
+}
+
+.contact__link-btn:hover {
+   color: #fff;
+   background: transparent;
+   border: 2px solid #fff;
+}
+
+@media screen and (max-width: 1280px){  
+   .contact {
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+}

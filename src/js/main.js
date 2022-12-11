@@ -1,3 +1,4 @@
+// Mobile menu
 $('.mobile div').on('click', () => {
   $('.mobile div').toggleClass('active');
   $('.mobile nav').toggleClass('open');
