@@ -6,7 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&Poppins:wght@400;600&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="./src/css/style.css">
    <link rel="stylesheet" type="text/css" href="./src/slick/slick.css"/>
    <link rel="stylesheet" type="text/css" href="./src/slick/slick-theme.css"/>
@@ -173,6 +173,35 @@
             <p class="contact__text">Grow Your Company Faster<br>
                Than Ever Before</p>
             <a href="#" class="contact__link-btn">Contact Us</a>
+         </div>
+         <!-- popup -->
+         <div id="popup" class="popup">
+            <div class="popup__body">
+               <div class="popup__content">
+                  <a href="" class="popup__close"></a>
+                  <form action="#" name="contact" id="form" method="post">
+                     <h1 class="form__title _text-center">Contact Us</h1>
+                     <div>
+                        <input class="form__name" type="text" name="name" placeholder="First Name" required>
+                        <input class="form__last-name" type="text" name="name" placeholder="Last Name" required>
+                     </div>
+                     <div>
+                        <input class="form__email" type="email" name="name" placeholder="Your email" required>
+                     </div>
+                     <div>
+                        <input class="form__company" type="text" name="name" placeholder="Company name (optional)">
+                     </div>
+                     <div>
+                        <input class="form__enqiry" type="text" name="name" placeholder="Enqiry">
+                     </div>
+                     <label for="contact" class="form__label">
+                        <input type="checkbox" class="form__checkbox">
+                        <span class="form__span">I agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></span>
+                     </label>
+                     <button type="submit" class="form__btn">Send</button>
+                  </form>
+               </div>
+            </div>
          </div>
       </section>
 
