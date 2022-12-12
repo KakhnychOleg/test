@@ -1,4 +1,4 @@
-.mobile div {
+.mobile__humb {
    display: block;
    position: relative;
    top: 0;
@@ -9,7 +9,7 @@
    cursor: pointer;
    box-sizing: content-box;
 }
-.mobile div span {
+.mobile__humb span {
    display: block;
    position: absolute;
    left: 50%;
@@ -21,26 +21,26 @@
    border-radius: 13px;
    transition-duration: .4s;
 }
-.mobile div span:nth-child(1) {
+.mobile__humb span:nth-child(1) {
    top: 14px;
 }
-.mobile div span:nth-child(2) {
+.mobile__humb span:nth-child(2) {
    top: 23px;
 }
-.mobile div span:nth-child(3) {
+.mobile__humb span:nth-child(3) {
    bottom: 16px;
 }
-.mobile div.active span:nth-child(1) {
+.mobile__humb.active span:nth-child(1) {
    transform: translate(-15px, 9px) rotate(-45deg);
 }
-.mobile div.active span:nth-child(2) {
+.mobile__humb.active span:nth-child(2) {
    transition-duration: 0s;
    opacity: 0;
 }
-.mobile div.active span:nth-child(3) {
+.mobile__humb.active span:nth-child(3) {
    transform: translate(-15px, -9px) rotate(45deg);
 }
-.mobile nav {
+.mobile__nav {
    display: block;
    position: fixed;
    bottom: 16px;
@@ -55,7 +55,7 @@
    justify-content: center;
    overflow: hidden;
 }
-.mobile nav.open {
+.mobile__nav.open {
    background: #FEE8CE;
    width: 80%;
    height: 100vh;
@@ -63,16 +63,15 @@
    top: 52px;
    border-radius: 0;
 }
-.mobile nav ul {
+.mobile__list {
    display: none;
 }
-.mobile nav ul.show {
+.mobile__list.show {
    display: flex;
    flex-direction: column;
+   width: 227px;
 }
-.mobile ul li {
-   display: flex;
-   align-items: center;
+.mobile__item {
    background-color: transparent;
    width: 100%;
    opacity: 0;
@@ -80,29 +79,42 @@
    animation-duration: 1s;
    animation-fill-mode: forwards;
 }
-.mobile ul li:not(:last-child) {
+.mobile__item:not(:last-child) {
    margin-bottom: 40px;
 }
-.mobile ul li a {
+.mobile__item a {
    font-size: 1.25rem;
    font-style: normal;
    font-weight: 600;
    line-height: 1.5625rem;
-   color: #E75624;;
+   color: #E75624;
 }
 
+.mobile-drop p a {
+   font-weight: 400;
+   font-size: 1.125rem;
+   line-height: 1.375rem;
+   
+   color: #252525;
+}
+.mobile-drop p a:hover {
+   color: #5c5c5c;
+}
 
+.mobile-drop p {
+   margin-top: 15px !important;
+}
+
+/* RESPONSIVE */
 @media screen and (min-width:1024px){
    .mobile {
        display: none;
    }
 }
 
-
 @keyframes fadein {
    0% {
        opacity: 0;
-        
    }
    100% {
        opacity: 1;

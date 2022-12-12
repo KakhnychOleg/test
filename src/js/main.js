@@ -1,11 +1,11 @@
 // Mobile menu
 $('.mobile div').on('click', () => {
   $('.mobile div').toggleClass('active');
-  $('.mobile nav').toggleClass('open');
-  $('.mobile nav ul').toggleClass('show');
+  $('.mobile__nav').toggleClass('open');
+  $('.mobile__list').toggleClass('show');
 });
-for (let a = 1; a <= $(".mobile ul li").length; a++){
-  $(".mobile ul li:nth-child("+ a +")").css("animation-delay", "."+ (a+1) +"s");   
+for (let a = 1; a <= $(".mobile__item").length; a++){
+  $(".mobile__item:nth-child("+ a +")").css("animation-delay", "."+ (a+1) +"s");   
 };
 
 // Slider testimonials

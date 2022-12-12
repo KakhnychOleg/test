@@ -1,4 +1,3 @@
-
 /* SLICK Custom Setting */
 .slick-initialized .slick-slide {
    margin: 0 15px;
@@ -64,7 +63,7 @@
    color: #666666;
 }
 
-
+/* RESPONSIVE */
 @media screen and (max-width: 780px){
    .reviews {
       margin: 60px auto;

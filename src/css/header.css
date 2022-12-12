@@ -1,5 +1,4 @@
 .head {
-   /* overflow: hidden; */
    position: relative;
    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 }
@@ -8,11 +7,16 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
-   /* height: 100px; */
+}
+
+.header__menu {
+   display: flex;
+   align-items: center;
+   gap: 2.5rem;
 }
 
 .header__logo {
-   width: 4.375rem; /* 70px/1215 */
+   width: 4.375rem;
 }
 
 .menu {
@@ -29,19 +33,26 @@
    height: 100px;
 }
 
-.menu__item:last-child {
+.mobile-tel,
+.mobile-tel__list {
    background: #E75624;
    border: 1px solid #E75624;
    border-radius: 100px;
    transition: all .3s ease-in;
    padding: 13px 20px 13px 20px;
 }
-.menu__item:last-child:hover {
+.mobile-tel:hover {
    background: #913617;
    border: 1px solid #913617;
 }
 
-.menu__item:last-child > .menu__link{
+.mobile-tel__list {
+   text-align: center;
+   color: #fff;
+   font-weight: 700;
+}
+
+.mobile-tel > .menu__link{
    color: #fff;
 }
 
@@ -104,6 +115,7 @@
    font-size: 16px;
    line-height: 20px;
 }
+/* ---------------------------- */
 
 .last-link {
    position: absolute;
@@ -121,8 +133,7 @@
    color: #000;
 }
 
-
-
+/* REsponsive */
 @media screen and (max-width:1024px){
    .header {
       justify-content: start;
@@ -133,23 +144,21 @@
       margin-left: 15px;
    }
    
-   .menu__item:last-child {
-      position: relative;
-      right: 0;
+   .mobile-tel {
+      position: absolute;
+      right: -16px;
+      width: 185px;
 
       background: #E75624;
       border: 1px solid #E75624;
       border-radius: 100px 0 0 100px;
       transition: all .3s ease-in;
-      padding: 13px 20px 13px 20px;
+      padding: 10px 20px 10px 20px;
    }
 }
 
 @media screen and (max-width:1024px){
-   .header__menu {
+   .menu {
        display: none;
-   }
-   .mobile-tel {
-       display: block;
    }
 }
