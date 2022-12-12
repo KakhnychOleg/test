@@ -168,7 +168,7 @@
       </section>
 
       <!-- contact -->
-      <section class="contact-bg">
+      <section class="contact-bg" id="drop">
          <div class="contact">
             <p class="contact__text">Grow Your Company Faster<br>
                Than Ever Before</p>
@@ -176,30 +176,36 @@
          </div>
          <!-- popup -->
          <div id="popup" class="popup">
+            <a href="#drop" class="popup__area"></a>
             <div class="popup__body">
                <div class="popup__content">
-                  <a href="#" class="popup__close">
+                  <a href="#drop" class="popup__close">
                      <img src="./src/img/close.png" alt="close">
                   </a>
-                  <form action="#" name="contact" id="form" method="post">
+                  <form action="" name="contact" id="form" method="post">
                      <h1 class="form__title _text-center">Contact Us</h1>
-                     <div>
-                        <input class="form__name" type="text" name="name" placeholder="First Name" required>
-                        <input class="form__last-name" type="text" name="name" placeholder="Last Name" required>
+
+                     <div class="form__block-name">
+                        <input class="form__input form__name" type="text" name="name" placeholder="First Name" required>
+                        <input class="form__input form__last-name" type="text" name="name" placeholder="Last Name" required>
                      </div>
                      <div>
-                        <input class="form__email" type="email" name="name" placeholder="Your email" required>
+                        <input class="form__input form__email" type="email" name="name" placeholder="Your email" required>
                      </div>
                      <div>
-                        <input class="form__company" type="text" name="name" placeholder="Company name (optional)">
+                        <input class="form__input form__company" type="text" name="name" placeholder="Company name (optional)">
                      </div>
                      <div>
-                        <input class="form__enqiry" type="text" name="name" placeholder="Enqiry">
+                        <input class="form__input form__enqiry" type="text" name="name" placeholder="Enqiry">
                      </div>
                      <label for="contact" class="form__label">
-                        <input type="checkbox" class="form__checkbox">
-                        <span class="form__span">I agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></span>
+                        <div class="checkbox">
+                           <input type="checkbox" name="checkbox" required>
+                           <span class="form__span">I agree to the <a href="#"class="form__span-link">Terms of Use</a> and <a href="#"class="form__span-link">Privacy Policy</a></span>
+                        </div>
+                        
                      </label>
+
                      <button type="submit" class="form__btn">Send</button>
                   </form>
                </div>

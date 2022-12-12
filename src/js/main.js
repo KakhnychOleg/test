@@ -6,7 +6,7 @@ $('.mobile div').on('click', () => {
 });
 for (let a = 1; a <= $(".mobile ul li").length; a++){
   $(".mobile ul li:nth-child("+ a +")").css("animation-delay", "."+ (a+1) +"s");   
-}
+};
 
 // Slider testimonials
 $('.reviews-slider').slick({
@@ -46,4 +46,22 @@ $(document).ready(function () {
     }
     $(this).toggleClass('active').next().slideToggle(300)
   });
-})
+});
+
+$(document).ready(function () {
+
+  $(document).on('click', '.checkbox', function(event) {
+    if($(this).hasClass('active-check')){
+      $(this).find('input').prop('checked',false);
+      $('.checkbox[input]').css('opacity', '0');
+    }else {
+      $(this).find('input').prop('checked',true);
+      $('.checkbox[input]').css('opacity', '1');
+    }
+    $(this).toggleClass('active-check');
+
+    return false;
+  });
+});
+
+
