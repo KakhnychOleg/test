@@ -62,6 +62,10 @@ $(document).ready(function () {
 
     return false;
   });
+
+  $( ".form__btn" ).click(function() {
+    alert('Form submit!');
+  });
 });
 
 

@@ -1,15 +1,11 @@
 .mobile div {
    display: block;
-   position: fixed;
-   top: 20px;
-   right: 20px;
-   background-color: #FC0A7E;
+   position: relative;
+   top: 0;
+   right: 0;
+   background-color: transparent;
    height: 50px;
    width: 50px;
-   border-radius: 50%;
-   z-index: 9999999;
-   border: 2px solid #e50b75;
-   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
    cursor: pointer;
    box-sizing: content-box;
 }
@@ -19,8 +15,9 @@
    left: 50%;
    transform: translateX(-50%);
    width: 30px;
-   height: 4px;
-   background-color: #fff;
+   height: 2px;
+   z-index: 99999;
+   background-color: #E75624;
    border-radius: 13px;
    transition-duration: .4s;
 }
@@ -31,7 +28,7 @@
    top: 23px;
 }
 .mobile div span:nth-child(3) {
-   bottom: 14px;
+   bottom: 16px;
 }
 .mobile div.active span:nth-child(1) {
    transform: translate(-15px, 9px) rotate(-45deg);
@@ -59,11 +56,11 @@
    overflow: hidden;
 }
 .mobile nav.open {
-   background-color: rgba(0, 0, 0, 0.9);
-   width: 100vw;
+   background: #FEE8CE;
+   width: 80%;
    height: 100vh;
-   right: 0px;
-   bottom: 0px;
+   left: 0px;
+   top: 52px;
    border-radius: 0;
 }
 .mobile nav ul {
@@ -76,7 +73,6 @@
 .mobile ul li {
    display: flex;
    align-items: center;
-   justify-content: center;
    background-color: transparent;
    width: 100%;
    opacity: 0;
@@ -85,24 +81,31 @@
    animation-fill-mode: forwards;
 }
 .mobile ul li:not(:last-child) {
-   margin-bottom: 22px;
+   margin-bottom: 40px;
 }
 .mobile ul li a {
-   font-size: 24px;
-   text-transform: uppercase;
-   letter-spacing: 0.1em;
-   text-decoration: none;
-   color: #fff;
+   font-size: 1.25rem;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 1.5625rem;
+   color: #E75624;;
 }
 
 
-@media (min-width:768px){
+@media screen and (min-width:1024px){
    .mobile {
        display: none;
    }
-}@media screen and (max-width:768px){
+}
+@media screen and (max-width:1024px){
    .header__menu {
        display: none;
+   }
+   .header {
+      height: 52px;
+   }
+   .header__logo {
+      width: 40px;
    }
 }
 

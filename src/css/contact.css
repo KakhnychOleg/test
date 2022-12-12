@@ -156,18 +156,13 @@
    gap: 2.5rem;
 }
 
-.form__name,
-.form__last-name {
-   max-width: 260px;
-}
-
 .form__span {
    margin-left: 40px;
    font-family: 'Montserrat';
    font-style: normal;
    font-weight: 400;
    font-size: 1rem;
-   line-height: 20px;
+   line-height: 25px;
 }
 
 .form__span-link { 
@@ -243,4 +238,17 @@
 .form__btn:hover {
    color: #FF1F00;
    border: 1px solid #FF1F00;
+}
+
+
+
+@media screen and (max-width:480px){
+   .form__title {
+      font-size: 1.875rem;
+   }
+   .form__block-name {
+      flex-wrap: wrap;
+      gap: 0;
+      height: 100%;
+   }
 }

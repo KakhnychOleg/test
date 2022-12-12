@@ -16,29 +16,41 @@
       <header class="head">
          <div class="container">
             <div class="header">
-               <!-- Logo -->
-               <a href="#" class="header__logo">
-                  <img src="./src/img/logo.png" alt="logo">
-               </a>
 
                <!-- Hamburger icon -->
                <div class="mobile">
                   <div>
-                      <span></span>
-                      <span></span>
-                      <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                   </div>
                   <nav>
-                      <ul>
-                          <li><a href="#">Nous découvrir</a></li>
-                          <li><a href="#">Nos activités</a></li>
-                          <li><a href="#">Nos actualités</a></li>
-                          <li><a href="#">Nos adresses</a></li>     
-                          <li><a href="#">Postuler</a></li>     
-                          <li class="menu__item"><a href="tel:0596 76 38 18" class="menu__link">0596 76 38 18</a></li>     
-                      </ul>
+                        <ul>
+                           <li><a href="#">Nous découvrir</a></li>
+                           <li><a href="#">Nos activités</a>
+                              <ul>
+                                 <li><a href="#">Ressourceries</a></li>
+                                 <li><a href="#">Borne de collecte</a></li>
+                                 <li><a href="#">Valorisation textile</a></li>
+                                 <li><a href="#">Nos BOUTIKS</a></li>
+                              </ul>
+                           </li>
+                           <li><a href="#">Nos actualités</a></li>
+                           <li><a href="#">Nos adresses</a></li>     
+                           <li><a href="#">Postuler</a></li>     
+                           <li class="menu__item">
+                              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M12.8766 9.1894C12.0195 9.1894 11.1779 9.05534 10.3804 8.79178C9.98958 8.65849 9.50917 8.78077 9.27066 9.02573L7.6965 10.2141C5.87092 9.23956 4.7464 8.11541 3.78521 6.30354L4.93857 4.77039C5.23822 4.47114 5.3457 4.03401 5.21693 3.62385C4.95224 2.82213 4.81779 1.98093 4.81779 1.12343C4.81782 0.503964 4.31386 0 3.69443 0H1.12339C0.503964 0 0 0.503964 0 1.12339C0 8.22365 5.77638 14 12.8766 14C13.4961 14 14 13.496 14 12.8766V10.3127C14 9.69336 13.496 9.1894 12.8766 9.1894Z" fill="white"/>
+                              </svg>
+                              <a href="tel:0596 76 38 18" class="menu__link"> 0596 76 38 18</a>
+                           </li>     
+                        </ul>
                   </nav>
                </div>
+               <!-- Logo -->
+               <a href="#" class="header__logo">
+                  <img src="./src/img/logo.png" alt="logo">
+               </a>
 
                <!-- Menu -->
                <div class="header__menu">
@@ -46,8 +58,15 @@
                      <li class="menu__item">
                         <a href="#" class="menu__link">Nous découvrir</a>
                      </li>
-                     <li class="menu__item">
+                     <li class="menu__item drop">
                         <a href="#" class="menu__link">Nos activités</a>
+                        <ul class="drop__list">
+                           <li class="drop__item"><a href="#" class="drop__link">Ressourceries</a></li>
+                           <li class="drop__item"><a href="#" class="drop__link">Borne de collecte</a></li>
+                           <li class="drop__item"><a href="#" class="drop__link">Valorisation textile</a></li>
+                           <li class="drop__item"><a href="#" class="drop__link">Nos boutiks</a></li>
+                           <a href="#" class="drop__link last-link">Nos formations</a>
+                        </ul>
                      </li>
                      <li class="menu__item">
                         <a href="#" class="menu__link">Nos actualités</a>
@@ -119,17 +138,6 @@
                      </div>
                   </div>
                </div>
-               <!-- Item slider -->
-               <div class="reviews-slider__item">
-                  <p class="reviews-slider__text">Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                  <div class="reviews-slider__person">
-                     <img class="reviews-slider__img" src="./src/img/photo2.png">
-                     <div class="reviews-slider__autor">
-                        <p class="name">Floyd Miles</p>
-                        <p class="specialty">President of Sales</p>
-                     </div>
-                  </div>
-               </div>
             </div>
          </div>
       </section>
@@ -183,7 +191,7 @@
                      <img src="./src/img/close.png" alt="close">
                   </a>
                   <form action="" name="contact" id="form" method="post">
-                     <h1 class="form__title _text-center">Contact Us</h1>
+                     <h1 class="form__title _text-center _mb-30">Contact Us</h1>
 
                      <div class="form__block-name">
                         <input class="form__input form__name" type="text" name="name" placeholder="First Name" required>
