@@ -41,6 +41,7 @@
    transition: all .3s ease-in;
    padding: 13px 20px 13px 20px;
 }
+.mobile-tel__list:hover,
 .mobile-tel:hover {
    background: #913617;
    border: 1px solid #913617;
@@ -61,9 +62,6 @@
    transition: all .3s;
 }
 
-.menu__link:hover {
-   color: #913617;
-}
 
 .menu__link svg{
    fill: #fff;
