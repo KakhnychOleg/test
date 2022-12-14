@@ -3,6 +3,7 @@ $('.mobile div').on('click', () => {
   $('.mobile div').toggleClass('active');
   $('.mobile__nav').toggleClass('open');
   $('.mobile__list').toggleClass('show');
+  $('html').toggleClass('hidden');
 });
 for (let a = 1; a <= $(".mobile__item").length; a++){
   $(".mobile__item:nth-child("+ a +")").css("animation-delay", "."+ (a+1) +"s");   

@@ -27,10 +27,16 @@
    font-size: 1rem;
 }
 
-.menu__item:not(:last-child) {
+.menu__item {
    display: flex;
    align-items: center;
    height: 100px;
+
+   color: #E75624;
+   transition: all .3s;
+}
+.menu__item:hover {
+   color: #000;
 }
 
 .mobile-tel,
@@ -56,12 +62,6 @@
 .mobile-tel > .menu__link{
    color: #fff;
 }
-
-.menu__link {
-   color: #E75624;
-   transition: all .3s;
-}
-
 
 .menu__link svg{
    fill: #fff;

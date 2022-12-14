@@ -88,6 +88,10 @@
    font-weight: 600;
    line-height: 1.5625rem;
    color: #E75624;
+   transition: all .3s;
+}
+.mobile__item a:hover {
+   color: #000;
 }
 
 .mobile-drop p a {
@@ -103,6 +107,11 @@
 
 .mobile-drop p {
    margin-top: 15px !important;
+}
+
+/* HIDDEN */
+.hidden {
+   overflow-y: hidden;
 }
 
 /* RESPONSIVE */
